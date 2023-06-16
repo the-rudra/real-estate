@@ -9,23 +9,28 @@ const Navbar = () => {
     { title: "Buy", underline: "bg-[#FF0000]" },
     { title: "Sell" },
     { title: "Rent" },
+    { title: "Blog" },
     { title: "Contact" },
   ];
   return (
-    <div className="flex items-center justify-between bg-[#213555] px-4 ">
+    <div className="flex items-center justify-between bg-white px-4 ">
       {/* Left Menu Icon */}
       <div className="lg:hidden">
-        <FiMenu className="w-10 h-10 text-white" />
+        <FiMenu className="w-10 h-10 " />
       </div>
       {/* Middle Logo */}
-      <div className="p-4">
+      <div className="">
         {/* Logo */}
-        <div className="">
-          <img src={logo} className="w-12" alt="" />
+        <div className="h-14">
+          <img
+            src={logo}
+            className="w-[9rem] object-cover absolute top-[-12px]"
+            alt=""
+          />
         </div>
       </div>
       {/* Links */}
-      <div className="hidden lg:flex text-white">
+      <div className="hidden lg:flex lg:pl-36">
         <ul className="flex space-x-10 py-4">
           {buttons.map((button) => (
             <NavBtn title={button.title} underline={button.underline} />
@@ -38,7 +43,7 @@ const Navbar = () => {
         <AiOutlineUser className="text-[36px]" />
       </div>
       <div className="hidden lg:flex items-center ">
-        <div className=" text-white">
+        <div className=" ">
           <button>Log In</button>
         </div>
         <div className=" bg-red-500 p-2 px-4 ml-6 text-white rounded-full">
