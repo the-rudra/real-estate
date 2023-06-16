@@ -43,7 +43,7 @@ const Hero = () => {
             placeholder="Name, Address, City, Street . . . "
           />
           <div className="absolute bg-red-500 rounded-full mr-[6px] flex items-center justify-center">
-            <button className="p-4">
+            <button className="p-2 lg:p-4">
               <BiSearch className="text-white text-[1.5rem] lg:text-[2rem]" />
             </button>
           </div>

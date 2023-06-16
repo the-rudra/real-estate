@@ -6,7 +6,7 @@ const NavBtn = ({ title, underline }) => {
       <li className="relative group mx-2">
         <button className="px-2">{title}</button>
         <div
-          className={`absolute flex h-5 w-full group-hover:bg-[#FF0000] -bottom-8   ${underline}`}
+          className={`absolute flex h-[2px] w-full group-hover:bg-[#FF0000] top-[40px]   ${underline}`}
         ></div>
       </li>
     </div>

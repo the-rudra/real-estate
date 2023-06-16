@@ -13,15 +13,15 @@ const Navbar = () => {
     { title: "Contact" },
   ];
   return (
-    <div className="flex items-center justify-between bg-white px-4 ">
+    <div className="flex items-center justify-between bg-white px-4 fixed top-0 left-0 right-0 z-50 border-black border-solid border-b-2">
       {/* Left Menu Icon */}
       <div className="lg:hidden">
-        <FiMenu className="w-10 h-10 " />
+        <FiMenu className="w-10 h-10" />
       </div>
       {/* Middle Logo */}
       <div className="">
         {/* Logo */}
-        <div className="h-14">
+        <div className="h-14 mr-36">
           <img
             src={logo}
             className="w-[9rem] object-cover absolute top-[-12px]"
@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* Links */}
-      <div className="hidden lg:flex lg:pl-36">
+      <div className="hidden lg:flex lg:pl-22">
         <ul className="flex space-x-10 py-4">
           {buttons.map((button) => (
             <NavBtn title={button.title} underline={button.underline} />
